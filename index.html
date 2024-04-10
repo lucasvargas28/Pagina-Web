@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Inicio de Sesión</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -12,21 +11,18 @@
   </header>
   <main>
     <form id="login-form">
-      <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Ingrese un nombre..." required>
-      </div>
-      <div>
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" placeholder="Ingrese su edad..." required>
-      </div>
-      <div>
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" placeholder="Ingrese su correo..." required>
-      </div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" required>
+      
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" required>
+      
       <button type="submit">Enviar</button>
     </form>
-    <p id="error-message" class="error-message"></p>
+    <p id="error-message"></p>
   </main>
   <footer>
     <script src="script.js"></script>
